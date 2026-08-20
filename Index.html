@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolce Vita - Pastelería Italiana</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <h1>🍰 Dolce Vita</h1>
+        <p>Pastelería Italiana | Pasticceria Italiana</p>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#productos">Tortas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<section id="inicio" class="hero">
+
+<h2>Bienvenidos a Dolce Vita</h2>
+
+<p class="es">
+Somos una pastelería artesanal inspirada en la tradición italiana. Elaboramos tortas, postres y dulces utilizando ingredientes frescos y recetas familiares que han pasado de generación en generación.
+</p>
+
+<p class="it">
+Benvenuti a Dolce Vita. Siamo una pasticceria artigianale ispirata alla tradizione italiana. Prepariamo torte e dolci con ingredienti freschi seguendo ricette tramandate di generazione in generazione.
+</p>
+
+<button onclick="cambiarIdioma()">Cambiar idioma</button>
+
+</section>
+
+<section id="nosotros">
+
+<h2>Quiénes Somos / Chi Siamo</h2>
+
+<p class="es">
+Dolce Vita nació en Montevideo con el objetivo de acercar los sabores tradicionales de Italia a Uruguay. Nuestro equipo prepara cada producto de manera artesanal, cuidando cada detalle para ofrecer una experiencia única a nuestros clientes.
+</p>
+
+<p class="it">
+Dolce Vita è nata a Montevideo con l'obiettivo di portare i sapori tradizionali italiani in Uruguay. Ogni dolce viene preparato artigianalmente con ingredienti di alta qualità.
+</p>
+
+</section>
+
+<section id="productos">
+
+<h2>Nuestras Tortas / Le Nostre Torte</h2>
+
+<div class="contenedor">
+
+<div class="tarjeta">
+
+<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Torta Chocolate">
+
+<h3>Torta de Chocolate</h3>
+
+<p class="es">
+Bizcochuelo de chocolate, relleno con mousse y cobertura de ganache.
+</p>
+
+<p class="it">
+Pan di Spagna al cioccolato con mousse e ganache.
+</p>
+
+<h4>$750</h4>
+
+</div>
+
+<div class="tarjeta">
+
+<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?w=500" alt="Cheesecake">
+
+<h3>Cheesecake</h3>
+
+<p class="es">
+Suave cheesecake con frutos rojos frescos.
+</p>
+
+<p class="it">
+Cheesecake con frutti rossi freschi.
+</p>
+
+<h4>$680</h4>
+
+</div>
+
+<div class="tarjeta">
+
+<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500" alt="Tiramisu">
+
+<h3>Tiramisú</h3>
+
+<p class="es">
+El clásico postre italiano preparado con café y cacao.
+</p>
+
+<p class="it">
+Il classico dessert italiano preparato con caffè e cacao.
+</p>
+
+<h4>$590</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto">
+
+<h2>Contacto / Contatti</h2>
+
+<form action="guardar_pedido.php" method="POST">
+
+<input type="text" name="nombre" placeholder="Nombre">
+
+<input type="email" name="correo" placeholder="Correo">
+
+<textarea name="pedido" placeholder="Escriba su pedido"></textarea>
+
+<input type="submit" value="Enviar Pedido">
+
+</form>
+
+<div class="info">
+
+<h3>Información del local</h3>
+
+<p><strong>Dirección:</strong> Av. Italia 1250 - Montevideo</p>
+
+<p><strong>Teléfono:</strong> 099 123 456</p>
+
+<p><strong>Email:</strong> contacto@dolcevita.com</p>
+
+<p><strong>Horario:</strong></p>
+
+<ul>
+
+<li>Lunes a Viernes: 08:00 - 20:00</li>
+
+<li>Sábado: 09:00 - 21:00</li>
+
+<li>Domingo: 09:00 - 18:00</li>
+
+</ul>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 Dolce Vita - Pastelería Italiana</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
