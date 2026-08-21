@@ -1,87 +1,122 @@
-// Cambio de idioma Español <-> Italiano
+/* ================= CAMBIO DE IDIOMA ================= */
 
-let idioma = "es";
+let idiomaActual = "es";
 
-function cambiarIdioma(){
+function cambiarIdioma() {
 
-    const espanol = document.querySelectorAll(".es");
-    const italiano = document.querySelectorAll(".it");
-    const boton = document.querySelector("button");
+    const textosEspanol = document.querySelectorAll(".es");
+    const textosItaliano = document.querySelectorAll(".it");
+    const boton = document.getElementById("idiomaBtn");
 
-    if(idioma === "es"){
+    if (idiomaActual === "es") {
 
-        espanol.forEach(texto =>{
+        textosEspanol.forEach(function(texto) {
             texto.style.display = "none";
         });
 
-        italiano.forEach(texto =>{
-            texto.style.display = "block";
+        textosItaliano.forEach(function(texto) {
+            texto.style.display = "";
         });
 
-        boton.innerHTML = "Passa allo spagnolo";
+        boton.innerHTML = "🇪🇸 Español";
 
-        idioma = "it";
+        idiomaActual = "it";
 
-    }else{
+        document.documentElement.lang = "it";
 
-        espanol.forEach(texto =>{
-            texto.style.display = "block";
-        });
+    } else {
 
-        italiano.forEach(texto =>{
+        textosItaliano.forEach(function(texto) {
             texto.style.display = "none";
         });
 
-        boton.innerHTML = "Cambiar idioma";
+        textosEspanol.forEach(function(texto) {
+            texto.style.display = "";
+        });
 
-        idioma = "es";
+        boton.innerHTML = "🇮🇹 Italiano";
+
+        idiomaActual = "es";
+
+        document.documentElement.lang = "es";
     }
-
 }
 
 
-// Animación al hacer scroll
+/* ================= ANIMACIONES AL HACER SCROLL ================= */
 
-const elementos = document.querySelectorAll("section");
+const elementos = document.querySelectorAll(
+    ".seccion, .presentacion, .horarios, .contacto-contenido"
+);
 
-function mostrarElementos(){
+function revisarAnimaciones() {
 
-    elementos.forEach(elemento=>{
+    elementos.forEach(function(elemento) {
 
         const posicion = elemento.getBoundingClientRect().top;
 
-        const pantalla = window.innerHeight;
+        const alturaPantalla = window.innerHeight;
 
-        if(posicion < pantalla - 100){
+        if (posicion < alturaPantalla - 100) {
 
-            elemento.style.opacity = "1";
-            elemento.style.transform = "translateY(0px)";
+            elemento.classList.add("visible");
 
         }
 
     });
-
 }
 
-elementos.forEach(elemento=>{
+window.addEventListener("scroll", revisarAnimaciones);
 
-    elemento.style.opacity = "0";
-    elemento.style.transform = "translateY(40px)";
-    elemento.style.transition = "1s";
+revisarAnimaciones();
+
+
+/* ================= FORMULARIO ================= */
+
+const formulario = document.getElementById("contactForm");
+
+formulario.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+    let mensaje;
+
+    if (idiomaActual === "es") {
+
+        mensaje =
+            "¡Gracias por contactarte con Dolce Vita! 🍰\n\n" +
+            "Tu mensaje fue recibido correctamente.";
+
+    } else {
+
+        mensaje =
+            "Grazie per aver contattato Dolce Vita! 🍰\n\n" +
+            "Il tuo messaggio è stato ricevuto correttamente.";
+
+    }
+
+    alert(mensaje);
+
+    formulario.reset();
 
 });
 
-window.addEventListener("scroll",mostrarElementos);
 
-mostrarElementos();
+/* ================= EFECTO DEL HEADER ================= */
 
+window.addEventListener("scroll", function() {
 
-// Mensaje al enviar el formulario
+    const header = document.querySelector("header");
 
-const formulario = document.querySelector("form");
+    if (window.scrollY > 50) {
 
-formulario.addEventListener("submit",function(){
+        header.style.boxShadow =
+            "0 5px 20px rgba(60, 35, 20, 0.10)";
 
-    alert("¡Gracias por tu pedido! / Grazie per il tuo ordine!");
+    } else {
+
+        header.style.boxShadow = "none";
+
+    }
 
 });
