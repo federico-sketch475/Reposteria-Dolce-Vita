@@ -1,176 +1,1139 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dolce Vita - Pastelería Italiana</title>
+
+    <title>Dolce Vita | Pastelería Italiana</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
+    <!-- ================= HEADER ================= -->
 
-    <div class="logo">
-        <h1>🍰 Dolce Vita</h1>
-        <p>Pastelería Italiana | Pasticceria Italiana</p>
-    </div>
+    <header>
 
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <li><a href="#productos">Tortas</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
+        <div class="logo">
+            <div class="logo-icon">🍰</div>
 
-</header>
+            <div>
+                <h1>Dolce Vita</h1>
+                <span>Pastelería Italiana</span>
+            </div>
+        </div>
 
-<section id="inicio" class="hero">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#pasteleria">Pastelería</a>
+            <a href="#productos">Tortas</a>
+            <a href="#tradicion">Tradición</a>
+            <a href="#local">Local</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
 
-<h2>Bienvenidos a Dolce Vita</h2>
+        <button id="idiomaBtn" onclick="cambiarIdioma()">
+            🇮🇹 Italiano
+        </button>
 
-<p class="es">
-Somos una pastelería artesanal inspirada en la tradición italiana. Elaboramos tortas, postres y dulces utilizando ingredientes frescos y recetas familiares que han pasado de generación en generación.
-</p>
+    </header>
 
-<p class="it">
-Benvenuti a Dolce Vita. Siamo una pasticceria artigianale ispirata alla tradizione italiana. Prepariamo torte e dolci con ingredienti freschi seguendo ricette tramandate di generazione in generazione.
-</p>
 
-<button onclick="cambiarIdioma()">Cambiar idioma</button>
+    <!-- ================= INICIO ================= -->
 
-</section>
+    <section id="inicio" class="hero">
 
-<section id="nosotros">
+        <div class="hero-content">
 
-<h2>Quiénes Somos / Chi Siamo</h2>
+            <span class="etiqueta">
+                PASTICCERIA ARTIGIANALE
+            </span>
 
-<p class="es">
-Dolce Vita nació en Montevideo con el objetivo de acercar los sabores tradicionales de Italia a Uruguay. Nuestro equipo prepara cada producto de manera artesanal, cuidando cada detalle para ofrecer una experiencia única a nuestros clientes.
-</p>
+            <h2 class="es">
+                Un pedacito de Italia<br>
+                en cada torta
+            </h2>
 
-<p class="it">
-Dolce Vita è nata a Montevideo con l'obiettivo di portare i sapori tradizionali italiani in Uruguay. Ogni dolce viene preparato artigianalmente con ingredienti di alta qualità.
-</p>
+            <h2 class="it">
+                Un piccolo pezzo d'Italia<br>
+                in ogni torta
+            </h2>
 
-</section>
+            <p class="es">
+                Bienvenidos a Dolce Vita, una pastelería artesanal
+                inspirada en los sabores, aromas y tradiciones de Italia.
+            </p>
 
-<section id="productos">
+            <p class="it">
+                Benvenuti da Dolce Vita, una pasticceria artigianale
+                ispirata ai sapori, ai profumi e alle tradizioni italiane.
+            </p>
 
-<h2>Nuestras Tortas / Le Nostre Torte</h2>
+            <a href="#productos" class="boton es">
+                Ver nuestras tortas
+            </a>
 
-<div class="contenedor">
+            <a href="#productos" class="boton it">
+                Scopri le nostre torte
+            </a>
 
-<div class="tarjeta">
+        </div>
 
-<img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500" alt="Torta Chocolate">
+    </section>
 
-<h3>Torta de Chocolate</h3>
 
-<p class="es">
-Bizcochuelo de chocolate, relleno con mousse y cobertura de ganache.
-</p>
+    <!-- ================= INTRODUCCIÓN ================= -->
 
-<p class="it">
-Pan di Spagna al cioccolato con mousse e ganache.
-</p>
+    <section class="presentacion">
 
-<h4>$750</h4>
+        <div class="presentacion-texto">
 
-</div>
+            <span class="subtitulo">
+                DOLCE VITA
+            </span>
 
-<div class="tarjeta">
+            <h2 class="es">
+                Más que una pastelería
+            </h2>
 
-<img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?w=500" alt="Cheesecake">
+            <h2 class="it">
+                Più di una pasticceria
+            </h2>
 
-<h3>Cheesecake</h3>
+            <p class="es">
+                En Dolce Vita creemos que los mejores momentos de la vida
+                muchas veces comienzan alrededor de una mesa. Una torta
+                puede acompañar un cumpleaños, una reunión familiar,
+                una celebración o simplemente una tarde especial.
+            </p>
 
-<p class="es">
-Suave cheesecake con frutos rojos frescos.
-</p>
+            <p class="es">
+                Por eso elaboramos cada producto de manera artesanal,
+                combinando recetas tradicionales italianas con ideas
+                modernas. Nuestro objetivo es ofrecer productos de
+                calidad y crear experiencias que nuestros clientes
+                recuerden.
+            </p>
 
-<p class="it">
-Cheesecake con frutti rossi freschi.
-</p>
+            <p class="it">
+                Da Dolce Vita crediamo che i momenti più belli della vita
+                spesso inizino intorno a una tavola. Una torta può
+                accompagnare un compleanno, una riunione familiare,
+                una celebrazione o semplicemente un pomeriggio speciale.
+            </p>
+
+            <p class="it">
+                Per questo prepariamo ogni prodotto artigianalmente,
+                combinando ricette tradizionali italiane con idee moderne.
+                Il nostro obiettivo è offrire prodotti di qualità e creare
+                esperienze che i nostri clienti possano ricordare.
+            </p>
+
+        </div>
+
+        <div class="presentacion-imagen">
+            <img
+                src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80"
+                alt="Torta artesanal">
+        </div>
+
+    </section>
+
+
+    <!-- ================= HISTORIA ================= -->
+
+    <section id="historia" class="seccion historia">
+
+        <div class="titulo-seccion">
 
-<h4>$680</h4>
+            <span>NOSTRA STORIA</span>
 
-</div>
+            <h2 class="es">
+                Nuestra historia
+            </h2>
 
-<div class="tarjeta">
+            <h2 class="it">
+                La nostra storia
+            </h2>
 
-<img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500" alt="Tiramisu">
+        </div>
 
-<h3>Tiramisú</h3>
+        <div class="historia-contenido">
 
-<p class="es">
-El clásico postre italiano preparado con café y cacao.
-</p>
+            <div class="historia-imagen">
 
-<p class="it">
-Il classico dessert italiano preparato con caffè e cacao.
-</p>
+                <img
+                    src="https://images.unsplash.com/photo-1558636508-e0db3814bd1d?auto=format&fit=crop&w=900&q=80"
+                    alt="Pastelería artesanal">
 
-<h4>$590</h4>
+            </div>
 
-</div>
+            <div class="historia-texto">
 
-</div>
+                <h3 class="es">
+                    Una tradición que comenzó en familia
+                </h3>
 
-</section>
+                <h3 class="it">
+                    Una tradizione nata in famiglia
+                </h3>
 
-<section id="contacto">
+                <p class="es">
+                    Dolce Vita nació a partir de una idea sencilla:
+                    compartir el amor por la pastelería italiana con
+                    las personas de nuestra comunidad.
+                </p>
 
-<h2>Contacto / Contatti</h2>
+                <p class="es">
+                    El proyecto comenzó como un pequeño emprendimiento
+                    familiar inspirado en las recetas que se preparaban
+                    en reuniones y celebraciones. Con el paso del tiempo,
+                    la pasión por la elaboración de tortas y postres
+                    fue creciendo hasta convertirse en nuestra propia
+                    pastelería.
+                </p>
 
-<form action="guardar_pedido.php" method="POST">
+                <p class="es">
+                    Desde nuestros comienzos buscamos mantener una
+                    elaboración artesanal. Cada torta se prepara
+                    prestando atención a los ingredientes, los sabores,
+                    las texturas y la decoración.
+                </p>
 
-<input type="text" name="nombre" placeholder="Nombre">
+                <p class="es">
+                    Hoy Dolce Vita busca ser un lugar donde la tradición
+                    italiana y la creatividad se encuentren. Queremos
+                    que cada persona que visite nuestro local se lleve
+                    algo más que un postre: una buena experiencia.
+                </p>
 
-<input type="email" name="correo" placeholder="Correo">
 
-<textarea name="pedido" placeholder="Escriba su pedido"></textarea>
+                <p class="it">
+                    Dolce Vita è nata da un'idea semplice:
+                    condividere l'amore per la pasticceria italiana
+                    con le persone della nostra comunità.
+                </p>
 
-<input type="submit" value="Enviar Pedido">
+                <p class="it">
+                    Il progetto è iniziato come una piccola attività
+                    familiare ispirata alle ricette preparate durante
+                    feste e riunioni. Con il tempo, la passione per
+                    torte e dolci è cresciuta fino a diventare la
+                    nostra pasticceria.
+                </p>
 
-</form>
+                <p class="it">
+                    Fin dall'inizio abbiamo cercato di mantenere una
+                    produzione artigianale. Ogni torta viene preparata
+                    con attenzione agli ingredienti, ai sapori,
+                    alle consistenze e alla decorazione.
+                </p>
 
-<div class="info">
+                <p class="it">
+                    Oggi Dolce Vita vuole essere un luogo dove la
+                    tradizione italiana incontra la creatività.
+                    Vogliamo che ogni persona che visita il nostro
+                    locale porti con sé qualcosa in più di un dolce:
+                    una bella esperienza.
+                </p>
 
-<h3>Información del local</h3>
+            </div>
 
-<p><strong>Dirección:</strong> Av. Italia 1250 - Montevideo</p>
+        </div>
 
-<p><strong>Teléfono:</strong> 099 123 456</p>
+    </section>
 
-<p><strong>Email:</strong> contacto@dolcevita.com</p>
 
-<p><strong>Horario:</strong></p>
+    <!-- ================= PASTELERÍA ================= -->
 
-<ul>
+    <section id="pasteleria" class="seccion informacion">
 
-<li>Lunes a Viernes: 08:00 - 20:00</li>
+        <div class="titulo-seccion">
 
-<li>Sábado: 09:00 - 21:00</li>
+            <span>LA PASTICCERIA</span>
 
-<li>Domingo: 09:00 - 18:00</li>
+            <h2 class="es">
+                Nuestra pastelería
+            </h2>
 
-</ul>
+            <h2 class="it">
+                La nostra pasticceria
+            </h2>
 
-</div>
+        </div>
 
-</section>
+        <div class="tarjetas-info">
 
-<footer>
+            <article>
 
-<p>© 2026 Dolce Vita - Pastelería Italiana</p>
+                <div class="icono">🍰</div>
 
-</footer>
+                <h3 class="es">
+                    Elaboración artesanal
+                </h3>
 
-<script src="script.js"></script>
+                <h3 class="it">
+                    Produzione artigianale
+                </h3>
+
+                <p class="es">
+                    Elaboramos nuestras tortas y postres de forma
+                    artesanal, cuidando cada etapa del proceso.
+                </p>
+
+                <p class="it">
+                    Prepariamo le nostre torte e i nostri dolci
+                    artigianalmente, curando ogni fase del processo.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <div class="icono">🇮🇹</div>
+
+                <h3 class="es">
+                    Inspiración italiana
+                </h3>
+
+                <h3 class="it">
+                    Ispirazione italiana
+                </h3>
+
+                <p class="es">
+                    Nuestras recetas están inspiradas en la tradición
+                    de diferentes regiones de Italia.
+                </p>
+
+                <p class="it">
+                    Le nostre ricette sono ispirate alla tradizione
+                    di diverse regioni italiane.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <div class="icono">🌱</div>
+
+                <h3 class="es">
+                    Ingredientes seleccionados
+                </h3>
+
+                <h3 class="it">
+                    Ingredienti selezionati
+                </h3>
+
+                <p class="es">
+                    Seleccionamos cuidadosamente los ingredientes
+                    para conseguir buenos sabores y texturas.
+                </p>
+
+                <p class="it">
+                    Selezioniamo con cura gli ingredienti per ottenere
+                    sapori e consistenze di alta qualità.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <div class="icono">❤️</div>
+
+                <h3 class="es">
+                    Hecho con dedicación
+                </h3>
+
+                <h3 class="it">
+                    Fatto con passione
+                </h3>
+
+                <p class="es">
+                    Ponemos dedicación en cada detalle para que
+                    nuestros clientes disfruten cada producto.
+                </p>
+
+                <p class="it">
+                    Mettiamo passione in ogni dettaglio affinché
+                    i nostri clienti possano apprezzare ogni prodotto.
+                </p>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+
+    <section id="productos" class="seccion productos">
+
+        <div class="titulo-seccion">
+
+            <span>LE NOSTRE TORTE</span>
+
+            <h2 class="es">
+                Tortas y especialidades
+            </h2>
+
+            <h2 class="it">
+                Torte e specialità
+            </h2>
+
+            <p class="es">
+                Algunas de nuestras especialidades más elegidas.
+            </p>
+
+            <p class="it">
+                Alcune delle nostre specialità più apprezzate.
+            </p>
+
+        </div>
+
+
+        <div class="productos-grid">
+
+
+            <article class="producto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=700&q=80"
+                    alt="Torta de chocolate">
+
+                <div class="producto-info">
+
+                    <span>01</span>
+
+                    <h3 class="es">
+                        Torta de Chocolate
+                    </h3>
+
+                    <h3 class="it">
+                        Torta al Cioccolato
+                    </h3>
+
+                    <p class="es">
+                        Bizcochuelo de chocolate, relleno de mousse
+                        y cobertura de ganache.
+                    </p>
+
+                    <p class="it">
+                        Pan di Spagna al cioccolato, mousse
+                        e copertura di ganache.
+                    </p>
+
+                    <strong>$750</strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=700&q=80"
+                    alt="Cheesecake">
+
+                <div class="producto-info">
+
+                    <span>02</span>
+
+                    <h3 class="es">
+                        Cheesecake de Frutos Rojos
+                    </h3>
+
+                    <h3 class="it">
+                        Cheesecake ai Frutti Rossi
+                    </h3>
+
+                    <p class="es">
+                        Base crocante, crema de queso y frutos rojos.
+                    </p>
+
+                    <p class="it">
+                        Base croccante, crema di formaggio e frutti rossi.
+                    </p>
+
+                    <strong>$680</strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=700&q=80"
+                    alt="Torta de frutilla">
+
+                <div class="producto-info">
+
+                    <span>03</span>
+
+                    <h3 class="es">
+                        Torta de Frutilla
+                    </h3>
+
+                    <h3 class="it">
+                        Torta alla Fragola
+                    </h3>
+
+                    <p class="es">
+                        Bizcochuelo suave con crema y frutillas frescas.
+                    </p>
+
+                    <p class="it">
+                        Pan di Spagna soffice con crema e fragole fresche.
+                    </p>
+
+                    <strong>$720</strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=700&q=80"
+                    alt="Tiramisú">
+
+                <div class="producto-info">
+
+                    <span>04</span>
+
+                    <h3 class="es">
+                        Tiramisú
+                    </h3>
+
+                    <h3 class="it">
+                        Tiramisù
+                    </h3>
+
+                    <p class="es">
+                        El clásico postre italiano preparado con café,
+                        mascarpone y cacao.
+                    </p>
+
+                    <p class="it">
+                        Il classico dolce italiano preparato con caffè,
+                        mascarpone e cacao.
+                    </p>
+
+                    <strong>$590</strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=700&q=80"
+                    alt="Torta de vainilla">
+
+                <div class="producto-info">
+
+                    <span>05</span>
+
+                    <h3 class="es">
+                        Torta de Vainilla
+                    </h3>
+
+                    <h3 class="it">
+                        Torta alla Vaniglia
+                    </h3>
+
+                    <p class="es">
+                        Torta clásica de vainilla con crema y decoración artesanal.
+                    </p>
+
+                    <p class="it">
+                        Torta classica alla vaniglia con crema e decorazione artigianale.
+                    </p>
+
+                    <strong>$650</strong>
+
+                </div>
+
+            </article>
+
+
+            <article class="producto">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+                    alt="Torta de cumpleaños">
+
+                <div class="producto-info">
+
+                    <span>06</span>
+
+                    <h3 class="es">
+                        Torta Especial
+                    </h3>
+
+                    <h3 class="it">
+                        Torta Speciale
+                    </h3>
+
+                    <p class="es">
+                        Diseñada para cumpleaños, aniversarios y celebraciones.
+                    </p>
+
+                    <p class="it">
+                        Ideale per compleanni, anniversari e celebrazioni.
+                    </p>
+
+                    <strong>Consultar</strong>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRADICIÓN ================= -->
+
+    <section id="tradicion" class="seccion tradicion">
+
+        <div class="tradicion-texto">
+
+            <span>TRADIZIONE ITALIANA</span>
+
+            <h2 class="es">
+                El sabor de Italia
+            </h2>
+
+            <h2 class="it">
+                Il sapore dell'Italia
+            </h2>
+
+            <p class="es">
+                La pastelería italiana se caracteriza por una gran
+                variedad de sabores, técnicas y recetas regionales.
+                Desde el norte hasta el sur del país existen
+                preparaciones que forman parte de la cultura y
+                de la vida cotidiana.
+            </p>
+
+            <p class="es">
+                En Dolce Vita tomamos inspiración de esa diversidad
+                y la combinamos con ingredientes disponibles en
+                Uruguay. De esta manera buscamos crear productos
+                que mantengan el espíritu de la tradición italiana
+                y, al mismo tiempo, se adapten a nuestros clientes.
+            </p>
+
+            <p class="it">
+                La pasticceria italiana è caratterizzata da una grande
+                varietà di sapori, tecniche e ricette regionali.
+                Dal nord al sud del paese esistono preparazioni
+                che fanno parte della cultura e della vita quotidiana.
+            </p>
+
+            <p class="it">
+                Da Dolce Vita prendiamo ispirazione da questa diversità
+                e la combiniamo con ingredienti disponibili in Uruguay.
+                In questo modo vogliamo mantenere lo spirito della
+                tradizione italiana adattandolo ai nostri clienti.
+            </p>
+
+        </div>
+
+        <div class="tradicion-datos">
+
+            <div>
+                <strong>01</strong>
+                <p class="es">Recetas tradicionales</p>
+                <p class="it">Ricette tradizionali</p>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <p class="es">Elaboración artesanal</p>
+                <p class="it">Produzione artigianale</p>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <p class="es">Sabores auténticos</p>
+                <p class="it">Sapori autentici</p>
+            </div>
+
+            <div>
+                <strong>04</strong>
+                <p class="es">Creatividad</p>
+                <p class="it">Creatività</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= VALORES ================= -->
+
+    <section class="seccion valores">
+
+        <div class="titulo-seccion">
+
+            <span>I NOSTRI VALORI</span>
+
+            <h2 class="es">
+                Lo que nos representa
+            </h2>
+
+            <h2 class="it">
+                Ciò che ci rappresenta
+            </h2>
+
+        </div>
+
+        <div class="valores-grid">
+
+            <div>
+                <span>01</span>
+                <h3 class="es">Calidad</h3>
+                <h3 class="it">Qualità</h3>
+                <p class="es">
+                    Elegimos cuidadosamente nuestros ingredientes
+                    y cuidamos cada preparación.
+                </p>
+                <p class="it">
+                    Scegliamo con cura gli ingredienti e
+                    prestiamo attenzione a ogni preparazione.
+                </p>
+            </div>
+
+            <div>
+                <span>02</span>
+                <h3 class="es">Tradición</h3>
+                <h3 class="it">Tradizione</h3>
+                <p class="es">
+                    Mantenemos vivas las recetas y costumbres
+                    de la pastelería italiana.
+                </p>
+                <p class="it">
+                    Manteniamo vive le ricette e le tradizioni
+                    della pasticceria italiana.
+                </p>
+            </div>
+
+            <div>
+                <span>03</span>
+                <h3 class="es">Familia</h3>
+                <h3 class="it">Famiglia</h3>
+                <p class="es">
+                    Creemos en el valor de compartir y disfrutar
+                    de los momentos importantes.
+                </p>
+                <p class="it">
+                    Crediamo nel valore della condivisione
+                    e dei momenti importanti.
+                </p>
+            </div>
+
+            <div>
+                <span>04</span>
+                <h3 class="es">Creatividad</h3>
+                <h3 class="it">Creatività</h3>
+                <p class="es">
+                    Creamos nuevas propuestas sin perder
+                    nuestra esencia tradicional.
+                </p>
+                <p class="it">
+                    Creiamo nuove proposte senza perdere
+                    la nostra essenza tradizionale.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= LOCAL ================= -->
+
+    <section id="local" class="seccion local">
+
+        <div class="titulo-seccion">
+
+            <span>IL NOSTRO LOCALE</span>
+
+            <h2 class="es">
+                Nuestro local
+            </h2>
+
+            <h2 class="it">
+                Il nostro locale
+            </h2>
+
+        </div>
+
+        <div class="local-grid">
+
+            <div class="local-imagen">
+
+                <img
+                    src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1000&q=80"
+                    alt="Interior de un local">
+
+            </div>
+
+            <div class="local-info">
+
+                <h3 class="es">
+                    Un espacio para disfrutar
+                </h3>
+
+                <h3 class="it">
+                    Uno spazio da vivere
+                </h3>
+
+                <p class="es">
+                    Nuestro local está pensado como un espacio
+                    cálido, cómodo y familiar. Queremos que nuestros
+                    clientes puedan disfrutar de una torta, tomar
+                    un café y compartir un momento agradable.
+                </p>
+
+                <p class="it">
+                    Il nostro locale è pensato come uno spazio
+                    accogliente, confortevole e familiare.
+                    Vogliamo che i nostri clienti possano gustare
+                    una torta, bere un caffè e trascorrere un
+                    momento piacevole.
+                </p>
+
+                <div class="datos-local">
+
+                    <div>
+                        <strong>📍</strong>
+                        <p>
+                            Av. Italia 1250<br>
+                            Montevideo, Uruguay
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>📞</strong>
+                        <p>
+                            099 123 456
+                        </p>
+                    </div>
+
+                    <div>
+                        <strong>✉️</strong>
+                        <p>
+                            contacto@dolcevita.com
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= HORARIOS ================= -->
+
+    <section class="horarios">
+
+        <div>
+
+            <span>ORARI</span>
+
+            <h2 class="es">
+                Horarios de atención
+            </h2>
+
+            <h2 class="it">
+                Orari di apertura
+            </h2>
+
+        </div>
+
+        <div class="horarios-lista">
+
+            <p>
+                <strong class="es">Lunes a Viernes</strong>
+                <strong class="it">Lunedì - Venerdì</strong>
+                <span>08:00 - 20:00</span>
+            </p>
+
+            <p>
+                <strong class="es">Sábado</strong>
+                <strong class="it">Sabato</strong>
+                <span>09:00 - 21:00</span>
+            </p>
+
+            <p>
+                <strong class="es">Domingo</strong>
+                <strong class="it">Domenica</strong>
+                <span>09:00 - 18:00</span>
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= OPINIONES ================= -->
+
+    <section class="seccion opiniones">
+
+        <div class="titulo-seccion">
+
+            <span>RECENSIONI</span>
+
+            <h2 class="es">
+                Lo que dicen nuestros clientes
+            </h2>
+
+            <h2 class="it">
+                Cosa dicono i nostri clienti
+            </h2>
+
+        </div>
+
+        <div class="opiniones-grid">
+
+            <article>
+
+                <div class="estrellas">
+                    ★★★★★
+                </div>
+
+                <p class="es">
+                    "La torta de chocolate fue excelente.
+                    Se notaba que estaba hecha de manera artesanal
+                    y tenía un sabor increíble."
+                </p>
+
+                <p class="it">
+                    "La torta al cioccolato era eccellente.
+                    Si sentiva che era fatta artigianalmente
+                    e aveva un sapore incredibile."
+                </p>
+
+                <strong>— Martina</strong>
+
+            </article>
+
+
+            <article>
+
+                <div class="estrellas">
+                    ★★★★★
+                </div>
+
+                <p class="es">
+                    "Me encantó la decoración del local y
+                    especialmente el tiramisú. Sin dudas
+                    volvería a Dolce Vita."
+                </p>
+
+                <p class="it">
+                    "Mi è piaciuta molto la decorazione del locale
+                    e soprattutto il tiramisù. Tornerei sicuramente
+                    da Dolce Vita."
+                </p>
+
+                <strong>— Lucas</strong>
+
+            </article>
+
+
+            <article>
+
+                <div class="estrellas">
+                    ★★★★★
+                </div>
+
+                <p class="es">
+                    "Excelente atención y productos muy ricos.
+                    Es un lugar perfecto para comprar una torta
+                    para una celebración."
+                </p>
+
+                <p class="it">
+                    "Ottimo servizio e prodotti deliziosi.
+                    È un posto perfetto per comprare una torta
+                    per una celebrazione."
+                </p>
+
+                <strong>— Sofía</strong>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACTO ================= -->
+
+    <section id="contacto" class="seccion contacto">
+
+        <div class="titulo-seccion">
+
+            <span>CONTATTI</span>
+
+            <h2 class="es">
+                Contactanos
+            </h2>
+
+            <h2 class="it">
+                Contattaci
+            </h2>
+
+            <p class="es">
+                ¿Querés hacer un pedido o consultar por una torta?
+                Escribinos y te responderemos lo antes posible.
+            </p>
+
+            <p class="it">
+                Vuoi fare un ordine o chiedere informazioni su una torta?
+                Scrivici e ti risponderemo il prima possibile.
+            </p>
+
+        </div>
+
+
+        <div class="contacto-contenido">
+
+            <div class="contacto-datos">
+
+                <h3 class="es">
+                    Información de contacto
+                </h3>
+
+                <h3 class="it">
+                    Informazioni di contatto
+                </h3>
+
+                <p>
+                    📍 Av. Italia 1250, Montevideo
+                </p>
+
+                <p>
+                    📞 099 123 456
+                </p>
+
+                <p>
+                    ✉️ contacto@dolcevita.com
+                </p>
+
+                <p>
+                    📷 @dolcevita.pasticceria
+                </p>
+
+            </div>
+
+
+            <form id="contactForm">
+
+                <input
+                    type="text"
+                    placeholder="Nombre"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Correo electrónico"
+                    required
+                >
+
+                <select>
+
+                    <option>
+                        Consulta general
+                    </option>
+
+                    <option>
+                        Pedido de torta
+                    </option>
+
+                    <option>
+                        Evento
+                    </option>
+
+                    <option>
+                        Otro
+                    </option>
+
+                </select>
+
+                <textarea
+                    placeholder="Escribí tu mensaje..."
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar mensaje
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-logo">
+            🍰 Dolce Vita
+        </div>
+
+        <p class="es">
+            Pastelería artesanal inspirada en la tradición italiana.
+        </p>
+
+        <p class="it">
+            Pasticceria artigianale ispirata alla tradizione italiana.
+        </p>
+
+        <div class="footer-links">
+
+            <a href="#inicio">Inicio</a>
+            <a href="#historia">Historia</a>
+            <a href="#productos">Tortas</a>
+            <a href="#contacto">Contacto</a>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Dolce Vita - Pastelería Italiana
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
